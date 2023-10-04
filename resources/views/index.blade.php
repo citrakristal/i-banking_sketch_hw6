@@ -64,13 +64,59 @@
                       <td>{{($d->email)}}</td>
                       <!-- action untuk edit dan delate -->
                       <td>
-                        <a href="" class="btn btn-primary"><i class="fas fa-pen"> Edit</i></a>
-                        <a href="" class="btn btn-danger"><i class="fas fa-trash-alt"> Delate</i></a>
-                    
+                        <a href="{{route('editData',['id' => $d->id]) }}" class="btn btn-primary"><i class="fas fa-pen"> Edit</i></a>
+                        <a data-toggle="modal" data-target="#modal-hapus{{$d->id}}" class="btn btn-danger"><i class="fas fa-trash-alt"> Hapus</i></a>
                     </tr>
+      <div class="modal fade" id="modal-hapus{{$d->id}}">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Konfirmasi</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Apakah anda yakin menghapus data <b>{{$d->name}}</b></p>
+            </div>
+            <div class="modal-footer justify-content-between">
+              <form action="{{route('deleteData',['id'=> $d->id])}}" method="POST">
+                @csrf
+                @method('DELETE')
+              
+              <button type="button" class="btn btn-default" data-dismiss="modal">Tidak</button>
+              <button type="submit" class="btn btn-danger">Hapus</button>
+              </form>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
                     @endforeach
                   </tbody>
                 </table>
+      <div class="modal fade" id="modal-hapus{{$d->id}}">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Konfirmasi</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Apakah anda yakin menghapus data <b>{{$d->name}}</b></p>
+            </div>
+            <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Hapus</button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
               </div>
               <!-- /.card-body -->
             </div>
