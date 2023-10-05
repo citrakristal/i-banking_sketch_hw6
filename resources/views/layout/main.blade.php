@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Company Name | Home</title>
+  <title>Kelompok 7 - 2</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -51,7 +51,7 @@
                 </a>
             </li>
             <li class="nav-item">
-              <a href="{{route('user.index')}}" class="nav-link ">
+              <a href="{{ route('profile') }}" class="nav-link ">
                 <p>User</p>
               </a>
             </li>
@@ -108,9 +108,9 @@
 <script src="{{asset('lte/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js')}}"></script>
 <!-- AdminLTE App -->
 <script src="{{asset('lte/dist/js/adminlte.js')}}"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="{{asset('lte/dist/js/demo.js')}}"></script>
+<!-- AdminLTE for demo purposes
+<script src="{{asset('lte/dist/js/demo.js')}}"></script> -->
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="{{asset('lte/dist/js/pages/dashboard.js')}}"></script>
+<!-- <script src="{{asset('lte/dist/js/pages/dashboard.js')}}"></script>
 </body>
-</html>
+</html> -->
