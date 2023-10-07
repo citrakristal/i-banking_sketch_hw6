@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -64,3 +65,12 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+=======
+[Wireframe on Figma](https://www.figma.com/file/oMJXs6h06e5IUYAO51dstD/Internet-Banking-Sketch---6th-HW?type=design&node-id=0%3A1&mode=design&t=Thc2KMsuurNR0nc5-1)
+Tools : Figma,
+Contents : Wireframe,
+Details : 
+- Desktop 1440 x 1024
+- Font using 'Poppins'
+- Card corner radius : 14
+>>>>>>> d99971610b4872207f955f01558de4ae7bf975c2
